@@ -1,4 +1,4 @@
-# Crypto Collectibles (Better name maybe at some point lol)
+# Stack Underflowed: The Adventure
 
 ## Project Description
 * Kind of wanna make a meme game for the massive
