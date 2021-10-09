@@ -6,10 +6,13 @@ name = "pypi"
 [packages]
 pyteal = "*"
 py-algorand-sdk = "*"
+peewee = "*"
 
 [dev-packages]
 black = "==21.9b0"
 mypy = "*"
+radon = "*"
+bandit = "*"
 
 [requires]
 python_version = "3.8"

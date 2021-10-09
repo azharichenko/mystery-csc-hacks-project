@@ -1,2 +1,4 @@
 config.json
 wallets.txt
+data/
+.mypy_cache
