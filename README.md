@@ -9,6 +9,7 @@
 
 ## Project Features
 * Grind distributor :muscle: for providing coding grind to the masses
+* The will to code when your *special* laptop is around :smirk:
 
 ## Team Information
 Alex Zharichenko

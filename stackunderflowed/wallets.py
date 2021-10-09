@@ -8,7 +8,3 @@ config = fetch_configuration()
 mnemonic_phrase = config.custodian_wallet_mnemonic
 account_private_key = mnemonic.to_private_key(mnemonic_phrase)
 account_public_key = mnemonic.to_public_key(mnemonic_phrase)
-
-
-def load_main_wallet() -> None:
-    pass

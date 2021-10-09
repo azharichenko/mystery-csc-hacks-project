@@ -26,10 +26,8 @@ def send_grind_token(recipient_address: str, send_amount: int) -> bool:
     first_valid_round = params.first
     last_valid_round = params.last
     fee = params.min_fee
-    send_amount = 1
 
     existing_account = account_public_key
-    send_to_address = "QPDUSNIS2I5WETAFWLRRTF4DLGUNVQ63BT7JZMFKEGGI6X4VV6WBEKL6QM"
 
     # Create and sign transaction
     tx = transaction.AssetTransferTxn(
@@ -38,7 +36,7 @@ def send_grind_token(recipient_address: str, send_amount: int) -> bool:
         first_valid_round,
         last_valid_round,
         gh,
-        send_to_address,
+        recipient_address,
         send_amount,
         33020017,
         flat_fee=True,

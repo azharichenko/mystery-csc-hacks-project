@@ -4,7 +4,7 @@ The supreme overlord script for everything this project i guess
 from argparse import ArgumentParser
 
 from stackunderflowed.distributor import *
-
+from stackunderflowed.indexer import *
 
 if __name__ == "__main__":
     parser = ArgumentParser(description="")
