@@ -3,7 +3,7 @@ from typing import Dict, Optional
 from algosdk.v2client import indexer
 from algosdk.v2client import algod
 
-from stackunderflowed import config
+from stackunderflowed import fetch_configuration, ProjectConfiguration
 
 ALGOD_ADDRESS = "https://testnet-algorand.api.purestake.io/ps2"
 INDEXER_ADDRESS = "https://testnet-algorand.api.purestake.io/idx2"
@@ -11,6 +11,7 @@ INDEXER_ADDRESS = "https://testnet-algorand.api.purestake.io/idx2"
 
 algod_client: Optional[algod.AlgodClient] = None
 indexer_client: Optional[indexer.IndexerClient] = None
+config: ProjectConfiguration = fetch_configuration()
 
 
 def _get_header() -> Dict:

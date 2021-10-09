@@ -3,7 +3,7 @@ The supreme overlord script for everything this project i guess
 """
 from argparse import ArgumentParser
 
-from stackunderflowed import *
+from stackunderflowed.distributor import *
 
 
 if __name__ == "__main__":
