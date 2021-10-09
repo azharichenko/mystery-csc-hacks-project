@@ -1,11 +1,11 @@
 # Crypto Collectibles (Better name maybe at some point lol)
 
 ## Project Description
-*This is intentionally open-ended, but consider that people will be reading this to get a brief understanding of what you're working on.* Some ideas are:
-* We want to accomplish x, y, z, using technologies x, y, z.
-* We want to do this because of x, y, z.
-* Doing this will require learning x, y, z.
-* We anticipate the following challenges: x, y, z.
+* Kind of wanna make a meme game for the massive
+  * Oh and it has NFTs yeeeeeee let's gooooo
+* Challenge, somehow do things you hate like web dev... gross
+* Learn what even is this assembly of this TEAL stuff (why is the language such a pretty color)
+* Make a politcal commentary on the grinding nature of the internship grind and how it makes us wanna cry and quit the major to become a business major
 
 ## Team Information
 Alex Zharichenko
