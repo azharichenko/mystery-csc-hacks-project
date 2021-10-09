@@ -5,7 +5,6 @@ name = "pypi"
 
 [packages]
 pyteal = "*"
-install = "*"
 py-algorand-sdk = "*"
 
 [dev-packages]
