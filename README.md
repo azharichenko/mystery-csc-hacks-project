@@ -7,6 +7,9 @@
 * Learn what even is this assembly of this TEAL stuff (why is the language such a pretty color)
 * Make a politcal commentary on the grinding nature of the internship grind and how it makes us wanna cry, quit the major, and become a business major
 
+## Project Features
+* Grind distributor :muscle: for providing coding grind to the masses
+
 ## Team Information
 Alex Zharichenko
 * Pitt CS, 2021

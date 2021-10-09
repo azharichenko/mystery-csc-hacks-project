@@ -1,16 +1,20 @@
+from pathlib import Path
+
 from peewee import SqliteDatabase, CharField, DateField, Model
 
-from stackunderflowed import DATA_DIR
-
+DATA_DIR: Path = Path.cwd() / "data"
 db: SqliteDatabase = SqliteDatabase(DATA_DIR / "crypto.db")
 
 
-class Person(Model):
-    name = CharField()
-    birthday = DateField()
+class Participant(Model):
+    pass
 
     class Meta:
-        database = db  # This model uses the "people.db" database.
+        database = db
+
+
+def connect_or_init_db() -> None:
+    pass
 
 
 def init_db():

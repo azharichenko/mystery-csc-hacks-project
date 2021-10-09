@@ -1,15 +1,9 @@
 """
 The supreme overlord script for everything this project i guess
 """
-import sched
 from argparse import ArgumentParser
 
-import stackunderflowed
-
-
-def run_distributor():
-    """Running work token distributor script that distributes daily rewards to HODLers"""
-    pass
+from stackunderflowed.distributor import *
 
 
 if __name__ == "__main__":

@@ -1,9 +1,7 @@
-import json
-import time
-import base64
 from algosdk import transaction
 
-from stackunderflowed import algodclient, account_private_key, account_public_key
+from stackunderflowed.clients import fetch_algod_client
+from stackunderflowed.wallets import account_private_key, account_public_key
 
 
 # Function from Algorand Inc.
@@ -20,8 +18,9 @@ def wait_for_confirmation(client, txid):
 
 
 def send_grind_token(recipient_address: str, send_amount: int) -> bool:
+    algod_client = fetch_algod_client()
     # get suggested parameters from Algod
-    params = algodclient.suggested_params()
+    params = algod_client.suggested_params()
 
     gh = params.gh
     first_valid_round = params.first
@@ -47,9 +46,9 @@ def send_grind_token(recipient_address: str, send_amount: int) -> bool:
     signed_tx = tx.sign(account_private_key)
 
     try:
-        tx_confirm = algodclient.send_transaction(signed_tx)
+        tx_confirm = algod_client.send_transaction(signed_tx)
         print("Transaction sent with ID", signed_tx.transaction.get_txid())
-        wait_for_confirmation(algodclient, txid=signed_tx.transaction.get_txid())
+        wait_for_confirmation(algod_client, txid=signed_tx.transaction.get_txid())
         return True
     except Exception as e:
         print(e)
