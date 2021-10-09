@@ -12,7 +12,7 @@ with config_file.open() as f:
 
 # Setup HTTP client w/guest key provided by PureStake
 algod_token = config["api-key"]
-algod_address = 'https://testnet-algorand.api.purestake.io/ps2'
+ALGOD_ADDRESS = 'https://testnet-algorand.api.purestake.io/ps2'
 purestake_token = {'X-Api-key': algod_token}
 
 # Initalize throw-away account for this example - check that is has funds before running script

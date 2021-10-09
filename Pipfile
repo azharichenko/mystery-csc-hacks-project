@@ -8,6 +8,8 @@ pyteal = "*"
 py-algorand-sdk = "*"
 
 [dev-packages]
+black = "==21.9b0"
+mypy = "*"
 
 [requires]
 python_version = "3.8"

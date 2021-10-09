@@ -5,7 +5,7 @@
   * Oh and it has NFTs yeeeeeee let's gooooo
 * Challenge, somehow do things you hate like web dev... gross
 * Learn what even is this assembly of this TEAL stuff (why is the language such a pretty color)
-* Make a politcal commentary on the grinding nature of the internship grind and how it makes us wanna cry and quit the major to become a business major
+* Make a politcal commentary on the grinding nature of the internship grind and how it makes us wanna cry, quit the major, and become a business major
 
 ## Team Information
 Alex Zharichenko
