@@ -5,7 +5,8 @@ from algosdk.v2client import algod
 
 from stackunderflowed import fetch_configuration, ProjectConfiguration
 
-ALGOD_ADDRESS = "https://testnet-algorand.api.purestake.io/ps2"
+# ALGOD_ADDRESS = "https://testnet-algorand.api.purestake.io/ps2"
+ALGOD_ADDRESS = "http://localhost:4001"
 INDEXER_ADDRESS = "https://testnet-algorand.api.purestake.io/idx2"
 
 
@@ -31,6 +32,8 @@ def fetch_algod_client() -> algod.AlgodClient:
     global algod_client
     if algod_client is None:
         algod_client = algod.AlgodClient(
-            config.api_key, ALGOD_ADDRESS, headers=_get_header()
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            ALGOD_ADDRESS,
+            # headers=_get_header(),
         )
     return algod_client
