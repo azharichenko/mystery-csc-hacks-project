@@ -19,7 +19,7 @@ def fetch_accounts_with_balance(
     while "next-token" in response:
         response = client.asset_balances(
             asset_id=asset_id,
-            min_balance=1,
+            min_balance=0,
             next_page=response["next-token"],
         )
 
