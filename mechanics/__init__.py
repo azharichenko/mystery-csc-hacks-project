@@ -1,6 +1,10 @@
 from abc import ABC, abstractmethod
 
 
+class StatelessApplication(ABC):
+    pass
+
+
 class StatefulApplication(ABC):
     @abstractmethod
     def on_creation(self):
@@ -34,4 +38,14 @@ class StatefulApplication(ABC):
     @abstractmethod
     @property
     def clear_state_program(self):
+        pass
+
+    @abstractmethod
+    @property
+    def global_schema(self):
+        pass
+
+    @abstractmethod
+    @property
+    def local_schema(self):
         pass
