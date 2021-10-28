@@ -3,3 +3,4 @@ wallets.txt
 data/
 .mypy_cache
 __pycache__/
+*_contract_dev.py
