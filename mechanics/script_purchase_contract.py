@@ -19,7 +19,7 @@ from pyteal import (
     compileTeal,
 )
 
-from mechanics import StatefulApplication
+from mechanics import StatefulApplication, StatelessApplication
 
 
 class SimpleScriptPurchaseApp(StatefulApplication):
